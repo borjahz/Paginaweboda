@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bodas - Marga & Manu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-great-vibes { font-family: 'Great Vibes', cursive; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FFF8F1] min-h-screen font-montserrat">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <a href="index.html" class="flex items-center text-[#5B4D43] hover:text-[#7A6B62]">
+                    <i class="fas fa-home mr-2"></i>Inicio
+                </a>
+                <div class="flex space-x-4">
+                    <a href="detalles-de-la-boda.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Detalles</a>
+                    <a href="autobuses.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Autobuses</a>
+                    <a href="lista-de-bodas.html" class="flex items-center px-3 py-2 text-[#5B4D43] font-semibold border-b-2 border-[#5B4D43]">Lista de bodas</a>
+                    <a href="santander.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Santander</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="font-great-vibes text-5xl text-center text-[#5B4D43] mb-12">Lista de Bodas</h1>
+
+        <div class="bg-white rounded-lg shadow-xl p-8 mb-8">
+            <div class="text-center mb-8">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Vuestra presencia en nuestra boda es el mejor regalo que podemos recibir. Sin embargo, para aquellos que deseen hacernos un detalle, hemos preparado una lista de bodas que nos ayudará a comenzar nuestra nueva vida juntos.
+                </p>
+            </div>
+
+            <!-- Bank Account Info -->
+            <div class="mb-12">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-gift text-2xl text-[#5B4D43] mr-4"></i>
+                    <h2 class="text-2xl font-semibold text-[#5B4D43]">Datos Bancarios</h2>
+                </div>
+                <div class="ml-12">
+                    <div class="bg-[#FFF8F1] p-6 rounded-lg">
+                        <p class="text-gray-700 mb-2"><strong>Titular:</strong> Marga y Manu</p>
+                        <p class="text-gray-700 mb-2"><strong>IBAN:</strong> ES00 0000 0000 0000 0000 0000</p>
+                        <p class="text-gray-700 mb-2"><strong>Concepto:</strong> Regalo Boda + [Vuestro nombre]</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternative Options -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-store text-2xl text-[#5B4D43] mr-4"></i>
+                    <h2 class="text-2xl font-semibold text-[#5B4D43]">Lista de Bodas en Tiendas</h2>
+                </div>
+                <div class="ml-12">
+                    <p class="text-gray-700 mb-4">
+                        También hemos creado una lista de bodas en las siguientes tiendas:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-[#FFF8F1] p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-[#5B4D43] mb-2">El Corte Inglés</h3>
+                            <p class="text-gray-700">Número de lista: 12345</p>
+                            <a href="https://www.elcorteingles.es" target="_blank" class="text-[#5B4D43] hover:text-[#7A6B62] underline mt-2 inline-block">
+                                Visitar tienda <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                        <div class="bg-[#FFF8F1] p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-[#5B4D43] mb-2">Casa Viva</h3>
+                            <p class="text-gray-700">Número de lista: 67890</p>
+                            <a href="https://www.casaviva.es" target="_blank" class="text-[#5B4D43] hover:text-[#7A6B62] underline mt-2 inline-block">
+                                Visitar tienda <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RSVP Button -->
+        <div class="text-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScp_j6dLElPp77QOiGNOl7lyfwaDSEf8pRai2ZrG42PwCGuLA/viewform?usp=header" target="_blank" class="inline-block bg-[#5B4D43] text-white px-8 py-4 rounded-full text-lg font-medium transition-all hover:bg-[#7A6B62] transform hover:scale-105">
+                Confirmar Asistencia
+            </a>
+        </div>
+
+        <!-- Thank You Note -->
+        <div class="text-center text-gray-700 mt-8">
+            <p class="italic">¡Gracias por formar parte de nuestra historia!</p>
+        </div>
+    </div>
+</body>
+</html>

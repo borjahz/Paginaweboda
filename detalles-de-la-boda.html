@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Boda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#FFF8F1] text-[#5B4D43]">
+    <!-- Hero Section -->
+    <div class="relative h-[60vh] bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg')">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="playfair text-5xl md:text-7xl text-white mb-4">Detalles de la Boda</h1>
+                <p class="montserrat text-xl text-white">Todo lo que necesitas saber sobre nuestro día especial</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-center gap-8 md:gap-12 text-lg">
+            <a href="index.html" class="montserrat text-[#5B4D43] hover:text-[#A0138E] transition">Home</a>
+            <a href="detalles-de-la-boda.html" class="montserrat text-[#5B4D43] hover:text-[#A0138E] transition">Detalles</a>
+            <a href="autobuses.html" class="montserrat text-[#5B4D43] hover:text-[#A0138E] transition">Autobuses</a>
+            <a href="hoteles.html" class="montserrat text-[#5B4D43] hover:text-[#A0138E] transition">Hoteles</a>
+            <a href="#ubicacion" class="montserrat text-[#5B4D43] hover:text-[#A0138E] transition">Ubicación</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Schedule Section -->
+        <section class="mb-20">
+            <h2 class="playfair text-4xl text-center mb-12">Cronograma del Día</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <i class="fas fa-church text-3xl mb-4 text-[#A0138E]"></i>
+                    <h3 class="playfair text-2xl mb-2">Ceremonia</h3>
+                    <p class="montserrat">16:00 hrs</p>
+                    <p class="montserrat text-sm mt-2">Iglesia San Francisco</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <i class="fas fa-glass-cheers text-3xl mb-4 text-[#A0138E]"></i>
+                    <h3 class="playfair text-2xl mb-2">Recepción</h3>
+                    <p class="montserrat">17:30 hrs</p>
+                    <p class="montserrat text-sm mt-2">Salón Real</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <i class="fas fa-music text-3xl mb-4 text-[#A0138E]"></i>
+                    <h3 class="playfair text-2xl mb-2">Fiesta</h3>
+                    <p class="montserrat">19:00 hrs</p>
+                    <p class="montserrat text-sm mt-2">Hasta el amanecer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="mb-20">
+            <h2 class="playfair text-4xl text-center mb-12">Ubicación</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex flex-col gap-8">
+                    <div>
+                        <h3 class="playfair text-2xl mb-4">Ceremonia</h3>
+                        <p class="montserrat mb-2"><i class="fas fa-map-marker-alt text-[#A0138E] mr-2"></i> Av. Principal 123</p>
+                        <p class="montserrat mb-4">La ceremonia se llevará a cabo en la hermosa Iglesia San Francisco, un lugar lleno de historia y encanto.</p>
+                        <img src="1280_iglesia_de_sta_ma_de_cana_pozuelo_de_alarcon_05_1284x642_q75_middle.jpg" alt="Ceremonia" class="mt-4 w-1/2 mx-auto rounded-lg opacity-90">
+                        <button class="montserrat bg-[#A0138E] text-white px-6 py-2 rounded hover:bg-[#800F71] transition">Ver en Mapa</button>
+                    </div>
+                    <div>
+                        
+                        <h3 class="playfair text-2xl mb-4">Recepción</h3>
+                        <p class="montserrat mb-2"><i class="fas fa-map-marker-alt text-[#A0138E] mr-2"></i> Calle Secundaria 456</p>
+                        <p class="montserrat mb-4">La recepción será en el elegante Salón Real, con amplios jardines y una vista espectacular.</p>
+                        <img src="images/nuevo.jpeg" alt="Recepción" class="mt-4 w-1/2 mx-auto rounded-lg opacity-90">
+                        <button class="montserrat bg-[#A0138E] text-white px-6 py-2 rounded hover:bg-[#800F71] transition">Ver en Mapa</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dress Code Section -->
+        <section class="mb-20">
+            <h2 class="playfair text-4xl text-center mb-12">Código de Vestimenta</h2>
+            <div class="text-center bg-white p-8 rounded-lg shadow-lg">
+                <i class="fas fa-tshirt text-5xl text-[#A0138E] mb-6"></i>
+                <h3 class="playfair text-2xl mb-4">Formal Elegante</h3>
+                <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="montserrat font-semibold mb-2">Damas</h4>
+                        <p class="montserrat text-sm">Vestido largo o cocktail<br>Colores suaves o pasteles</p>
+                    </div>
+                    <div>
+                        <h4 class="montserrat font-semibold mb-2">Caballeros</h4>
+                        <p class="montserrat text-sm">Traje oscuro<br>Corbata o pajarita</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section>
+            <h2 class="playfair text-4xl text-center mb-12">Confirmación de Asistencia</h2>
+            <div class="text-center bg-white p-8 rounded-lg shadow-lg max-w-xl mx-auto">
+                <p class="montserrat mb-6">Por favor confirma tu asistencia antes del 15 de abril</p>
+                <button class="montserrat bg-[#A0138E] text-white px-8 py-3 rounded-full hover:bg-[#800F71] transition text-lg">
+                    Confirmar Asistencia
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#5B4D43] text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="montserrat">#NuestraBoda2025</p>
+            <p class="montserrat text-sm mt-2">Con amor, Los Novios</p>
+        </div>
+    </footer>
+</body>
+</html>
