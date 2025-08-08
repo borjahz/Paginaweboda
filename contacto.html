@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda de Bea & Sergio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .font-great-vibes { font-family: 'Great Vibes', cursive; }
-        .font-montserrat { font-family: 'Montserrat', sans-serif; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boda de Bea & Sergio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .font-great-vibes { font-family: 'Great Vibes', cursive; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  </style>
 </head>
 
 <body class="bg-[#FFF8F1] min-h-screen font-montserrat">
-    <nav class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <a href="index.html" class="flex items-center text-[#5B4D43] hover:text-[#7A6B62]">
-                    <i class="fas fa-home mr-2"></i>Inicio
-                </a>
-                <div class="flex space-x-4">
-                    <a href="detalles-de-la-boda.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Detalles</a>
-                    <a href="autobuses.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Autobuses</a>
-                    <a href="lista-de-bodas.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Lista de bodas</a>
-                    <a href="contacto.html" class="flex items-center px-3 py-2 text-[#5B4D43] font-semibold border-b-2 border-[#5B4D43]">Contacto</a>
-                </div>
-            </div>
+  <!-- NAV -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-3 sm:gap-0 h-auto sm:h-16 py-3">
+        <a href="index.html" class="flex items-center text-[#5B4D43] hover:text-[#7A6B62]">
+          <i class="fas fa-home mr-2"></i>Inicio
+        </a>
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+          <a href="detalles-de-la-boda.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Detalles</a>
+          <a href="autobuses.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Autobuses</a>
+          <a href="lista-de-bodas.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Lista de bodas</a>
+          <a href="contacto.html" class="flex items-center px-3 py-2 text-[#5B4D43] font-semibold border-b-2 border-[#5B4D43]">Contacto</a>
         </div>
-    </nav>
-<section id="contacto" class="max-w-4xl mx-auto px-4 py-12">
-  <div class="bg-white rounded-lg shadow-xl p-8">
-    <!-- Cabecera -->
-    <div class="flex flex-col items-center mb-6">
-  <!-- Icono más grande y estándar -->
-  <i class="fas fa-phone text-4xl text-[#5B4D43] mb-2"></i>
-  <!-- Título en su propia línea -->
-  <h2 class="text-4xl font-great-vibes text-[#5B4D43]">Contacto</h2>
-</div>
-    <p class="text-gray-700 text-center mb-8">Para lo que necesites, te dejamos nuestro contacto</p>
-
-    <!-- Botones de contacto -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <a href="tel:685404392"
-         class="block border-2 border-[#5B4D43] rounded-full py-5 px-4 text-center font-semibold text-[#5B4D43]
-                hover:bg-[#FFF8F1] transition transform hover:scale-105">
-        <span class="block text-lg">BEA</span>
-        <span class="block text-2xl mt-1">685 404 392</span>
-      </a>
-      <a href="tel:685836069"
-         class="block border-2 border-[#5B4D43] rounded-full py-5 px-4 text-center font-semibold text-[#5B4D43]
-                hover:bg-[#FFF8F1] transition transform hover:scale-105">
-        <span class="block text-lg">SERGIO</span>
-        <span class="block text-2xl mt-1">685 836 069</span>
-      </a>
+      </div>
     </div>
-  </div>
-</section>
+  </nav>
 
+  <main id="contacto" class="max-w-4xl mx-auto px-4 py-12">
+    <section class="bg-white rounded-lg shadow-xl p-6 sm:p-8">
+      <!-- Cabecera -->
+      <div class="flex flex-col items-center mb-6">
+        <i class="fas fa-phone text-4xl text-[#5B4D43] mb-2"></i>
+        <h2 class="text-3xl sm:text-4xl font-great-vibes text-[#5B4D43]">Contacto</h2>
+      </div>
+      <p class="text-gray-700 text-center mb-8">Para lo que necesites, te dejamos nuestro contacto</p>
+
+      <!-- Botones de contacto -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <a href="tel:685404392"
+           aria-label="Llamar a Bea al 685 404 392"
+           class="inline-flex items-center justify-center w-full text-center gap-2 border-2 border-[#5B4D43] rounded-full py-5 px-4 font-semibold text-[#5B4D43]
+                  hover:bg-[#FFF8F1] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#5B4D43]">
+          <i class="fas fa-phone"></i>
+          <span>
+            <span class="block text-lg">BEA</span>
+            <span class="block text-xl sm:text-2xl mt-1">685 404 392</span>
+          </span>
+        </a>
+
+        <a href="tel:685836069"
+           aria-label="Llamar a Sergio al 685 836 069"
+           class="inline-flex items-center justify-center w-full text-center gap-2 border-2 border-[#5B4D43] rounded-full py-5 px-4 font-semibold text-[#5B4D43]
+                  hover:bg-[#FFF8F1] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#5B4D43]">
+          <i class="fas fa-phone"></i>
+          <span>
+            <span class="block text-lg">SERGIO</span>
+            <span class="block text-xl sm:text-2xl mt-1">685 836 069</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+</body>
 </html>
-
-
-

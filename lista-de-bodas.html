@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Bodas - Marga & Manu</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .font-great-vibes { font-family: 'Great Vibes', cursive; }
-        .font-montserrat { font-family: 'Montserrat', sans-serif; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Bodas - Marga & Manu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .font-great-vibes { font-family: 'Great Vibes', cursive; }
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  </style>
 </head>
 <body class="bg-[#FFF8F1] min-h-screen font-montserrat">
-    <nav class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <a href="index.html" class="flex items-center text-[#5B4D43] hover:text-[#7A6B62]">
-                    <i class="fas fa-home mr-2"></i>Inicio
-                </a>
-                <div class="flex space-x-4">
-                    <a href="detalles-de-la-boda.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Detalles</a>
-                    <a href="autobuses.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Autobuses</a>
-                    <a href="lista-de-bodas.html" class="flex items-center px-3 py-2 text-[#5B4D43] font-semibold border-b-2 border-[#5B4D43]">Lista de bodas</a>
-                    <a href="contacto.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Contacto</a>
-                </div>
-            </div>
+
+  <!-- NAV -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-3 sm:gap-0 h-auto sm:h-16 py-3">
+        <a href="index.html" class="flex items-center text-[#5B4D43] hover:text-[#7A6B62]">
+          <i class="fas fa-home mr-2"></i>Inicio
+        </a>
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+          <a href="detalles-de-la-boda.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Detalles</a>
+          <a href="autobuses.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Autobuses</a>
+          <a href="lista-de-bodas.html" class="flex items-center px-3 py-2 text-[#5B4D43] font-semibold border-b-2 border-[#5B4D43]">Lista de bodas</a>
+          <a href="contacto.html" class="flex items-center px-3 py-2 text-[#5B4D43] hover:text-[#7A6B62]">Contacto</a>
         </div>
-    </nav>
-
-    <div class="max-w-4xl mx-auto px-4 py-12">
-        <h1 class="font-great-vibes text-5xl text-center text-[#5B4D43] mb-12">Lista de Bodas</h1>
-
-        <div class="bg-white rounded-lg shadow-xl p-8 mb-8">
-            <div class="text-center mb-8">
-                <p class="text-gray-700 text-lg leading-relaxed">
-                  Para nosotros, vuestra presencia en este día tan especial es el mejor regalo.
-Igualmente, si queréis ayudarnos tanto en esta nueva etapa como a recorrer kilómetros en nuestro viaje a Japón y Maldivas, hemos creado una cuenta bancaria común que os facilitamos a continuación:
-
-
-            <!-- Bank Account Info -->
-            <div class="mb-12">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-gift text-2xl text-[#5B4D43] mr-4"></i>
-                    <h2 class="text-2xl font-semibold text-[#5B4D43]">Datos Bancarios</h2>
-                </div>
-                <div class="ml-12">
-                    <div class="bg-[#FFF8F1] p-6 rounded-lg">
-                        <p class="text-gray-700 mb-2"><strong>Titular:</strong> Bea y Sergio</p>
-                        <p class="text-gray-700 mb-2"><strong>IBAN:</strong> ES12 1465 0100 93 1755306187</p>
-                    </div>
-                </div>
-            </div>
-  <!-- Thank You Note -->
-        <div class="text-center text-gray-700 mt-8">
-            <p class="text-gray-700 text-lg leading-relaxed">Muchísimas gracias!</p>
-        </div>
-      
+      </div>
     </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="font-great-vibes text-4xl md:text-5xl text-center text-[#5B4D43] mb-12">Lista de Bodas</h1>
+
+    <section class="bg-white rounded-lg shadow-xl p-6 sm:p-8 mb-8">
+      <div class="text-center mb-8">
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Para nosotros, vuestra presencia en este día tan especial es el mejor regalo. Igualmente, si queréis ayudarnos
+          tanto en esta nueva etapa como a recorrer kilómetros en nuestro viaje a Japón y Maldivas, hemos creado una
+          cuenta bancaria común que os facilitamos a continuación:
+        </p>
+      </div>
+
+      <!-- Bank Account Info -->
+      <div class="mb-12">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-gift text-2xl text-[#5B4D43] mr-4"></i>
+          <h2 class="text-2xl font-semibold text-[#5B4D43]">Datos Bancarios</h2>
+        </div>
+
+        <div class="sm:ml-12">
+          <div class="bg-[#FFF8F1] p-6 rounded-lg">
+            <p class="text-gray-700 mb-2"><strong>Titular:</strong> Bea y Sergio</p>
+            <p class="text-gray-700 mb-2 break-words tracking-wider">
+              <strong>IBAN:</strong> ES12 1465 0100 93 1755306187
+            </p>
+
+            <!-- opcional: botón copiar -->
+            <button
+              type="button"
+              class="mt-3 inline-block w-full sm:w-auto text-center bg-[#5B4D43] text-white px-5 py-2 rounded-full text-sm hover:bg-[#7A6B62] transition"
+              onclick="navigator.clipboard.writeText('ES12 1465 0100 93 1755306187')"
+            >
+              Copiar IBAN
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thank You -->
+      <div class="text-center text-gray-700">
+        <p class="text-lg leading-relaxed">¡Muchísimas gracias!</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
