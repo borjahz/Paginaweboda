@@ -13,6 +13,7 @@
         .bg-overlay { background-color: rgba(255, 255, 255, 0.85); }
     </style>
 </head>
+
 <body class="bg-[#FFF8F1] min-h-screen font-montserrat">
     <!-- Hero Section -->
     <div class="relative h-[100vh] md:min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url(images/foto_blanco_y_negro.jfif);
@@ -33,15 +34,38 @@
         </div>
       </div>
 
-      <p class="text-[#5B4D43] text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed">
-        Nos hace mucha ilusión poder compartir este día tan especial con vosotros y nos encantaría que nos acompañaseis en el día más importante de nuestras vidas.
-      </p>
-
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScp_j6dLElPp77QOiGNOl7lyfwaDSEf8pRai2ZrG42PwCGuLA/viewform?usp=sf_link"
          target="_blank" rel="noopener noreferrer"
          class="inline-block w-full sm:w-auto text-center bg-[#5B4D43] text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-lg font-medium transition-all hover:bg-[#7A6B62] hover:scale-[1.02]">
         CONFIRMAR ASISTENCIA
       </a>
+<!-- Countdown SIEMPRE visible debajo del botón -->
+<section id="countdownSection" class="mt-3">
+  <h3 class="text-lg md:text-xl leading-tight text-[#4E5F82] mb-2 text-center">
+    Falta para la boda:
+  </h3>
+
+  <div id="countdown"
+       class="grid grid-cols-4 gap-[6px] text-center max-w-md mx-auto">
+    <div class="bg-white/70 backdrop-blur-sm rounded-md p-2 shadow">
+      <div id="cd-days"  class="text-lg md:text-xl font-semibold text-[#4E5F82] leading-none">--</div>
+      <div class="text-[10px] md:text-xs text-[#3F4C68] mt-[2px] tracking-tight">días</div>
+    </div>
+    <div class="bg-white/70 backdrop-blur-sm rounded-md p-2 shadow">
+      <div id="cd-hours" class="text-lg md:text-xl font-semibold text-[#4E5F82] leading-none">--</div>
+      <div class="text-[10px] md:text-xs text-[#3F4C68] mt-[2px] tracking-tight">horas</div>
+    </div>
+    <div class="bg-white/70 backdrop-blur-sm rounded-md p-2 shadow">
+      <div id="cd-mins"  class="text-lg md:text-xl font-semibold text-[#4E5F82] leading-none">--</div>
+      <div class="text-[10px] md:text-xs text-[#3F4C68] mt-[2px] tracking-tight">min</div>
+    </div>
+    <div class="bg-white/70 backdrop-blur-sm rounded-md p-2 shadow">
+      <div id="cd-secs"  class="text-lg md:text-xl font-semibold text-[#4E5F82] leading-none">--</div>
+      <div class="text-[10px] md:text-xs text-[#3F4C68] mt-[2px] tracking-tight">s</div>
+    </div>
+  </div>
+</section>
+
 
       <!-- Navigation Links -->
       <div class="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 text-[#5B4D43] text-base md:text-lg">
@@ -57,5 +81,44 @@
       <i class="fas fa-chevron-down animate-bounce text-2xl"></i>
     </div>
   </div>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // ✅ Fecha/hora LOCAL, sin problemas de parseo (mes 0-based: 10 = noviembre)
+  const weddingDate = new Date(2025, 10, 15, 13, 0, 0); // 15 nov 2025, 13:00
+
+  const dEl = document.getElementById('cd-days');
+  const hEl = document.getElementById('cd-hours');
+  const mEl = document.getElementById('cd-mins');
+  const sEl = document.getElementById('cd-secs');
+
+  // Si los IDs no existen, salimos (evita errores silenciosos)
+  if (!dEl || !hEl || !mEl || !sEl) {
+    console.warn('No encuentro los elementos del countdown. Revisa los IDs.');
+    return;
+  }
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  function tick() {
+    const now = new Date();
+    let diff = weddingDate - now;
+    if (diff < 0) diff = 0;
+
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000) / 60000);
+    const secs  = Math.floor((diff % 60000) / 1000);
+
+    dEl.textContent = days;
+    hEl.textContent = pad(hours);
+    mEl.textContent = pad(mins);
+    sEl.textContent = pad(secs);
+  }
+
+  tick(); // pinta inmediatamente
+  setInterval(tick, 1000); // actualiza cada segundo
+});
+</script>
+
 </body>
 </html>
